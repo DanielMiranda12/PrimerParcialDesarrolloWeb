@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Technoshop</title>
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="icon" type="image/png" href="img/logo.png" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="contenedor-encabezado"></div>
+
+    <!-- Sidebar -->
+    <div id="contenedor-barra-lateral"></div>
+
+    <!-- Login -->
+    <main class="contenedor-principal">
+      <section class="panel-login" aria-labelledby="titulo-login">
+        <h2 id="titulo-login">Iniciar sesión</h2>
+        <form id="form-inicio" autocomplete="off" novalidate>
+          <label for="usuario">Usuario</label>
+          <input id="usuario" name="usuario" type="text" required />
+
+          <label for="contrasenia">Contraseña</label>
+          <input id="contrasenia" name="contrasenia" type="password" required />
+
+          <p id="mensaje-error" class="error" aria-live="polite"></p>
+
+          <button type="submit" class="btn">Entrar</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="contenedor-pie"></div>
+
+    <!-- Scripts -->
+    <script src="js/cargarComponentes.js"></script>
+  </body>
+</html>
