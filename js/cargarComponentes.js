@@ -1,5 +1,3 @@
-// js/cargarComponentes.js
-
 // carga un fragmento HTML en un contenedor por id
 async function cargarFragmento(ruta, idDestino) {
   const contenedor = document.getElementById(idDestino);
