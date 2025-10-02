@@ -1,0 +1,166 @@
+/* Fuente general */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  --azul-oscuro: #1e3a8a;
+  --azul-claro:  #3b82f6;
+  --texto-claro: #f9fafb;
+  --alto-header: 60px;
+}
+
+* { box-sizing: border-box; }
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  /* evita que el header fijo tape el contenido */
+  padding-top: var(--alto-header);
+  background: #f3f4f6;
+}
+
+/* ================== HEADER ================== */
+.encabezado {
+  background-color: var(--azul-oscuro);
+  color: var(--texto-claro);
+  padding: 0 1.25rem;
+  height: var(--alto-header);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1200;
+}
+
+/* Botón hamburguesa: visible y con buen z-index */
+.boton-menu {
+  font-size: 1.4rem;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: var(--texto-claro);
+  padding: 0.45rem;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1250;
+}
+.boton-menu:hover { color: var(--azul-claro); }
+
+/* Logo */
+.logo img {
+  height: 150px;
+  display: block;
+}
+
+/* Menú principal (empujado a la derecha) */
+.menu-principal {
+  margin-left: auto; /* empuja el menú al final del header */
+}
+.menu-principal ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+.menu-principal a {
+  color: var(--texto-claro);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.35rem 0.45rem;
+}
+.menu-principal a:hover { color: var(--azul-claro); }
+
+/* ================== SIDEBAR ================== */
+/* sidebar flota encima del contenido; empieza oculto a la izquierda */
+.barra-lateral {
+  position: fixed;
+  top: 0;
+  left: -280px;
+  width: 280px;
+  height: 100%;
+  background: var(--azul-oscuro);
+  color: var(--texto-claro);
+  padding: calc(var(--alto-header) + 1rem) 1rem 1.5rem 1rem; /* deja espacio para header */
+  box-shadow: 2px 0 12px rgba(0,0,0,0.2);
+  transition: left 0.28s ease;
+  z-index: 1220;
+}
+.barra-lateral.activo {
+  left: 0;
+}
+
+.barra-lateral h2 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.15rem;
+  color: var(--texto-claro);
+  text-align: center;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.barra-lateral ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+.barra-lateral li {
+  margin-bottom: 0.6rem;
+}
+.barra-lateral a {
+  display: block;
+  padding: 0.6rem 0.75rem;
+  border-radius: 6px;
+  color: var(--texto-claro);
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.22s ease, color 0.22s ease;
+}
+.barra-lateral a:hover {
+  background: var(--azul-claro);
+  color: white;
+}
+
+/* ================== OVERLAY ================== */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.48);
+  z-index: 1210;
+  display: none;
+}
+.overlay.activo { display: block; }
+
+/* ================== LOGIN (mantengo lo que tenías) ================== */
+.contenedor-principal {
+  min-height: calc(100vh - var(--alto-header));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.panel-login {
+  background: #ffffff;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+.panel-login h2 { margin-bottom: 1.2rem; font-size: 1.5rem; color: var(--azul-oscuro); }
+.panel-login form { display:flex; flex-direction:column; gap:1rem; text-align:left; }
+.panel-login label { font-weight:600; color:var(--azul-oscuro); }
+.panel-login input { padding:0.7rem; border-radius:8px; border:1px solid #cbd5e1; }
+.panel-login input:focus { border-color:var(--azul-claro); box-shadow:0 0 6px rgba(59,130,246,0.25); }
+.panel-login .btn { background:var(--azul-oscuro); color:#fff; border:none; padding:0.8rem; border-radius:8px; font-weight:600; }
+.panel-login .btn:hover { background:var(--azul-claro); }
