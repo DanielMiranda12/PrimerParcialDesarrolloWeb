@@ -1,0 +1,105 @@
+[
+  {
+    "id": "t1000",
+    "nombre": "TecnoBook Pro 14",
+    "precio": 2599000,
+    "descripcion": "Ultraportátil con pantalla 14\", CPU i7, 16GB RAM, 512GB SSD",
+    "imagen": "imagenes/TeTecnoBook-Pro-14.png",
+    "colores": [
+      "#515151"
+    ],
+    "specs": {
+      "CPU": "Intel i7 1365U",
+      "RAM": "16 GB",
+      "Almacenamiento": "512 GB SSD",
+      "GPU": "Intel Iris Xe",
+      "Pantalla": "14'' 1920x1200"
+    }
+  },
+  {
+    "id": "t1001",
+    "nombre": "Lenovo Legion 5",
+    "precio": 4599000,
+    "descripcion": "Rendimiento para juegos: Ryzen 7, 32GB, RTX 4060",
+    "imagen": "imagenes/lenovo-legion-5.png",
+    "colores": [
+      "#515151"
+    ],
+    "specs": {
+      "CPU": "AMD Ryzen 7 7840HS",
+      "RAM": "32 GB",
+      "Almacenamiento": "1 TB SSD",
+      "GPU": "NVIDIA RTX 4060",
+      "Pantalla": "17.3'' 144Hz"
+    }
+  },
+  {
+    "id": "t1002",
+    "nombre": "ASUS TUF Gaming F15",
+    "precio": 5999000,
+    "descripcion": "Portatil con una gran capacidad y CPU + GPU potente",
+    "imagen": "imagenes/asus-tuf-gaming-f15.png",
+    "colores": [
+      "#111827"
+    ],
+    "specs": {
+      "CPU": "Intel i5-14300H",
+      "RAM": "64 GB",
+      "Almacenamiento": "2 TB SSD",
+      "GPU": "NVIDIA RTX 4090TI",
+      "Pantalla": "15.6'' 4K opcional"
+    }
+  },
+  {
+    "id": "t1003",
+    "nombre": "HP Victus 15",
+    "precio": 1299000,
+    "descripcion": "Computador portatil para gaming con gran potencia",
+    "imagen": "imagenes/hp-victus-15.png",
+    "colores": [
+      "#425368"
+    ],
+    "specs": {
+      "CPU": "Intel i5",
+      "RAM": "8 GB",
+      "Almacenamiento": "256 GB SSD",
+      "GPU": "Integrada",
+      "Pantalla": "Soporta monitores 4K"
+    }
+  },
+  {
+    "id": "t1004",
+    "nombre": "MacBook Pro",
+    "precio": 3199000,
+    "descripcion": "Laptop portátil de Apple",
+    "imagen": "imagenes/macbook-pro.png",
+    "colores": [
+      "#d0d1d3"
+    ],
+    "specs": {
+      "CPU": "Chip M4 de Apple",
+      "RAM": "32 GB",
+      "Almacenamiento": "1 TB SSD",
+      "GPU": "Integrada",
+      "Pantalla": "16'' 2.5K sRGB 100%"
+    }
+  },
+  {
+    "id": "t1005",
+    "nombre": "Acer Nitro 5",
+    "precio": 3000000,
+    "descripcion": "Para creadores: buen CPU, y Gpu",
+    "imagen": "imagenes/Acer-Nitro-5.png",
+    "colores": [
+      "#000000",
+      "#f50000"
+    ],
+    "specs": {
+      "CPU": "Intel i5-10300H",
+      "RAM": "16 GB",
+      "Almacenamiento": "1 TB HDD",
+      "GPU": "NVIDIA RTX 3050",
+      "Pantalla": "24'' 2.5K sRGB 100%"
+    }
+  }
+]

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>TecnoShop - Página Principal</title>
+
+    <!-- Bootstrap CSS (CDN) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- header y sidebar se cargarán por cargarComponentes.js -->
+    <div id="contenedor-encabezado"></div>
+
+    <div id="contenedor-barra-lateral"></div>
+
+    <div class="container">
+      <!-- LEFT: Sidebar (component) -->
+      <aside
+        id="left-sidebar"
+        class="barra-lateral"
+        aria-label="Navegación lateral"
+      ></aside>
+
+      <!-- CENTER: Carrusel -->
+      <section>
+        <div class="carousel-card">
+          <h2>Modelos destacados</h2>
+          <div id="carouselContainer">
+            <!-- Bootstrap carousel generado por JS -->
+            <div
+              id="productCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div
+                class="carousel-inner"
+                role="listbox"
+                id="carouselInner"
+              ></div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#productCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#productCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- template (usado por products.js para clonar tarjetas dentro de cada item del carousel) -->
+          <template id="carousel-item-template">
+            <div class="item-inner" role="group">
+              <!-- Múltiples thumbs (mostramos 3 por slide en desktop) -->
+              <div class="product-thumb" tabindex="0">
+                <img src="" alt="" />
+                <h4 class="p-name"></h4>
+                <span class="p-price"></span>
+              </div>
+              <div class="product-thumb" tabindex="0">
+                <img src="" alt="" />
+                <h4 class="p-name"></h4>
+                <span class="p-price"></span>
+              </div>
+              <div class="product-thumb" tabindex="0">
+                <img src="" alt="" />
+                <h4 class="p-name"></h4>
+                <span class="p-price"></span>
+              </div>
+            </div>
+          </template>
+        </div>
+      </section>
+
+      <!-- RIGHT: Detalles -->
+      <aside
+        id="right-details"
+        class="details-panel"
+        aria-label="Detalles del producto"
+      >
+        <h3>Selecciona un producto</h3>
+        <div id="detailsContent">
+          <p>
+            Haz clic sobre un producto del carrusel para ver sus
+            características.
+          </p>
+        </div>
+      </aside>
+    </div>
+
+    <div id="contenedor-pie"></div>
+
+    <!-- Scripts -->
+    <script defer src="js/cargarComponentes.js"></script>
+    <script defer src="js/productCard.js"></script>
+    <script defer src="js/products.js"></script>
+
+    <!-- Bootstrap JS (bundle contiene popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

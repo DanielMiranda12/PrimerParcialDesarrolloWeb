@@ -15,9 +15,9 @@ async function cargarFragmento(ruta, idDestino) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  cargarFragmento('components/header.html', 'contenedor-encabezado');
-  cargarFragmento('components/sidebar.html', 'contenedor-barra-lateral'); // 👈 aquí corregido
-  cargarFragmento('components/footer.html', 'contenedor-pie');
+  cargarFragmento('componentes/header.html', 'contenedor-encabezado');
+  cargarFragmento('componentes/sidebar.html', 'contenedor-barra-lateral');
+  cargarFragmento('componentes/footer.html', 'contenedor-pie');
 });
 
 // función que instala listeners para botón / overlay una sola vez cuando estén disponibles

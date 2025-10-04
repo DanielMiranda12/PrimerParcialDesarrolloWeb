@@ -4,6 +4,7 @@ const contraseniaValida = "1234";
 
 document.addEventListener("DOMContentLoaded", () => {
   const formulario = document.getElementById("form-inicio");
+  if (!formulario) return;
   const inputUsuario = document.getElementById("usuario");
   const inputContrasenia = document.getElementById("contrasenia");
   const mensajeError = document.getElementById("mensaje-error");
