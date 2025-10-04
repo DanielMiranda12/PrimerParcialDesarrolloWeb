@@ -64,7 +64,8 @@ Git y GitHub para control de versiones con ramas individuales.
 
 Colaboradores
 
-Daniel (rama: daniel-login) Encargado de login, header, sidebar, footer, acerca, estilos y script de carga de componentes.
+Daniel Alexander MIranda Vega - 192086 (rama: daniel-login) Encargado de login, header, sidebar, footer, acerca, estilos y script de carga de componentes.
+Mileneth Adonis Coa Rodriguez - 192276 (rama: milenet_PaginaPrincipal) encargado del la pagina principal y del los productos de la pagina.
 
 Estructura del proyecto Technoshop/ ├── components/ │ ├── header.html │ ├── sidebar.html │ └── footer.html ├── css/ │ ├── login.css │ └── acerca.css ├── js/ │ └── cargarComponentes.js ├── login.html ├── acerca.html └── README.md
 
