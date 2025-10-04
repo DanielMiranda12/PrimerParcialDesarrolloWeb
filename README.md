@@ -3,24 +3,55 @@ Technoshop
 Aplicación web modularizada para simular una tienda de componentes de computadores. Este proyecto fue desarrollado como parte del examen de Desarrollo Web.
 
 Funcionalidades implementadas
+Login (login.html)
 
-Login (login.html):
-Estructura base con formulario de usuario y contraseña. Caja centrada con diseño responsivo en tonos azules. Conectado con header, sidebar y footer mediante el script de carga de componentes.
+Estructura base con formulario de usuario y contraseña.
 
-Header (components/header.html):
-Logo de Technoshop. Menú de navegación horizontal. Botón hamburguesa que abre y cierra la barra lateral.
+Caja centrada con diseño responsivo en tonos turquesa y verde.
 
-Sidebar (components/sidebar.html):
-Navegación con opciones: Iniciar Sesión, Registrarse, Tienda, Acerca de, Usuarios. Animación de apertura y cierre con overlay.
+Conectado con header, sidebar y footer mediante el script de carga de componentes.
 
-Footer (components/footer.html):
-Información de contacto y créditos, dependiendo del avance del desarrollo.
+Acerca de (acerca.html)
 
-JavaScript (js/cargarComponentes.js):
-Carga dinámica de los componentes (header, sidebar y footer) en las páginas. Control del botón hamburguesa y overlay para abrir y cerrar la barra lateral.
+Página informativa sobre la tienda.
 
-CSS (css/login.css):
-Estilos generales con paleta de colores azules. Diseño responsivo. Estilo para login, header y barra lateral.
+Contenido organizado en un panel central con sombra y bordes redondeados.
+
+Estilo adaptado desde login.css hacia acerca.css para mantener coherencia visual.
+
+Integrado con header, sidebar y footer cargados dinámicamente.
+
+Header (components/header.html)
+
+Logo de Technoshop.
+
+Menú de navegación horizontal.
+
+Botón hamburguesa que abre y cierra la barra lateral.
+
+Sidebar (components/sidebar.html)
+
+Navegación con opciones: Iniciar Sesión, Registrarse, Tienda, Acerca de, Usuarios.
+
+Animación de apertura y cierre con overlay.
+
+Sidebar oculto por defecto (left: -280px) y visible al activarse con la clase .activo.
+
+Footer (components/footer.html)
+
+Información de contacto y créditos.
+
+JavaScript (js/cargarComponentes.js)
+
+Carga dinámica de los componentes (header, sidebar y footer) en las páginas.
+
+Control del botón hamburguesa y overlay para abrir y cerrar la barra lateral.
+
+CSS
+
+css/login.css: Estilos generales con paleta de colores, estilos de login, header y barra lateral.
+
+css/acerca.css: Estilos derivados de login.css, adaptados a la página de Acerca de.
 
 Tecnologías usadas
 
@@ -35,7 +66,7 @@ Git y GitHub para control de versiones con ramas individuales.
 Colaboradores
 
 Daniel (rama: daniel-login)
-Encargado de login, header, sidebar, footer, estilos y script de carga de componentes.
+Encargado de login, header, sidebar, footer, acerca, estilos y script de carga de componentes.
 
 Estructura del proyecto
 Technoshop/
@@ -44,12 +75,15 @@ Technoshop/
 │ ├── sidebar.html
 │ └── footer.html
 ├── css/
-│ └── login.css
+│ ├── login.css
+│ └── acerca.css
 ├── js/
 │ └── cargarComponentes.js
 ├── login.html
+├── acerca.html
 └── README.md
 
 Nota importante
 
-Este proyecto es de carácter académico. Las funcionalidades de login y registro no cuentan aún con validación real de credenciales.
+Este proyecto es de carácter académico.
+Las funcionalidades de login y registro no cuentan aún con validación real de credenciales.
